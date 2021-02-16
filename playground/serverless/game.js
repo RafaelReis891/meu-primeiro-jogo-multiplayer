@@ -94,7 +94,7 @@ export default function createGame() {
         const acceptedMoves = {
             ArrowUp(player) {
                 if (player.y - 1 >= 0) {
-                    player.y = player.y - 1
+                    player.y = player.y - 5
                 }
             },
             ArrowRight(player) {
@@ -104,7 +104,7 @@ export default function createGame() {
             },
             ArrowDown(player) {
                 if (player.y + 1 < state.screen.height) {
-                    player.y = player.y + 1
+                    player.y = player.y + 5
                 }
             },
             ArrowLeft(player) {
